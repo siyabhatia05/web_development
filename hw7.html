@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        min-height:900px;
+        border: 1px solid black;
+        position: relative;
+      }
+      .logo {
+        color: aqua;
+        height: 60px;
+        margin: 20px 30px 0;
+        width: 200px;
+        float: left;
+      }
+      .right {
+        height: 100px;
+        margin: 30px 30px 0;
+        width: 120px;
+        float: right;
+      }
+      .p1 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .clear-all {
+        clear: both;
+      }
+      .div1 {
+        width: 400px;
+        height: 200px;
+        border: 2px solid black;
+        margin-left: 30px;
+      }
+      .div2 {
+        width: 400px;
+        height: 200px;
+        border: 2px solid black;
+        margin-left: 30px;
+        position: absolute;
+        top: 130px;
+        right: 30px;
+      }
+      .table{
+            width:96%;
+            margin:10px 30px 0;
+            padding:10px;
+            box-sizing: border-box;
+            border:1px solid black;
+            border-collapse: collapse;
+            height:60px;
+            line-height:40px;
+      }
+      .div5{
+        border:600px;
+        height:200px;
+         font-size:15px;
+         font-weight:bold;
+         margin-right: 15px;
+         position:absolute;
+         top:520px;
+         right:130px;
+         text-align:right;
+      }
+      .div6{
+        border:600px;
+        height:200px;
+         font-size:15px;
+         font-weight:bold;
+         margin-right: 15px;
+         position:absolute;
+         top:520px;
+         right:30px;
+         text-align:right;
+      }
+      .div3{
+            width:400px;
+            height:250px;
+            border:2px solid black;
+            margin-left:30px;
+            position:absolute;
+            top:600px
+        }
+        .div4{
+            width:500px;
+            height:250px;
+            border:2px solid black;
+            margin-left:30px;
+            position:absolute;
+            top:600px;
+            right:30px;
+        }
+        .hh1{
+          background-color: rgba(192, 190, 190,0.2);
+          height:30px;
+          padding:10px;
+        }
+        .hh4{
+          margin:5px 20px 0;
+        }
+        .hh2{
+          text-align: right;
+        }
+        .bank{
+          color:aqua;
+          background-color: rgba(0, 255, 255,0.2);
+          height:30px;
+          padding:10px;
+          font-weight:bold;
+        }
+        .hh5{
+          margin:20px 20px 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo" style="font-size: 40px">Logo here</div>
+      <div class="right">
+        <p class="p1">INVOICE</p>
+        <h4 style="color: grey; line-height: 25px">Invoice #001</h4>
+      </div>
+      <br class="clear-all" />
+      <div class="div1"><div class="hh1" style="color: black">From:<span style="color:aqua">Your Name</span></div>
+      <h4 class="hh4">Address</h4>
+      <h4 class="hh4">details</h4>
+      <h4 class="hh4">more</h4>
+      </div>
+      <div class="div2">
+        <div class="hh1 hh2" style="color: black">To:<span style="color:aqua">Client Name</span></div>
+        <h4 class="hh4 hh2">Address</h4>
+        <h4 class="hh4 hh2">details</h4>
+        <h4 class="hh4 hh2">more</h4>
+      </div>
+      <table class="table" border="1">
+        <tr style="font-weight: bold">
+          <td>service</td>
+          <td>description</td>
+          <td>Hrs/Qty</td>
+          <td>Rate/Price</td>
+          <td>Sub Total</td>
+        </tr>
+        <tr>
+          <td>Article</td>
+          <td>Title of your article here</td>
+          <td align="right">-</td>
+          <td align="right">$200.00</td>
+          <td align="right">$200.00</td>
+        </tr>
+        <tr>
+          <td>Template Design</td>
+          <td>Details of project here</td>
+          <td align="right">10</td>
+          <td align="right">75.00</td>
+          <td align="right">$750.00</td>
+        </tr>
+        <tr>
+          <td>Development</td>
+          <td>WordPress Blogging theme</td>
+          <td align="right">S</td>
+          <td align="right">50.00</td>
+          <td align="right">$250.00</td>
+        </tr>
+      </table>
+      <div class="div5">
+        <p class="p2">sub Total :</p>
+        <p class="p2">Tax:</p>          
+        <p class="p2">total:</p> 
+      </div>
+      <div class="div6">
+        <p class="p2">$1200.00</p>
+        <p class="p2">N/A</p>
+        <p class="p2">$1200.00</p>
+      </div>
+      <div class="div3">
+      <div class="bank">Bank Details</div>
+      <h4 class="hh5">Your Name</h4>
+      <h4 class="hh5">Bank Name</h4>
+      <h4 class="hh5">SWIFT:-----</h4>
+      <h4 class="hh5">Account no:1212121</h4>
+      <h4 class="hh5">IBAN:-----</h4>
+      </div>
+      <div class="div4">
+        <div class="bank"> Contact Details</div>
+        <div class="hh5">Email:you@gmail.com</div>
+        <h4 class="hh5">Mobile no:112211221</h4>
+        <h4 class="hh5">twitter:<span color="aqua">@tahir</span></h4>
+        <h4 class="hh5">payment should be made by bank Transfer</h4>
+      </div>
+    </div>
+  </body>
+</html>
